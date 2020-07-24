@@ -8,7 +8,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Adam Trincas</h1>
+        <h1 className="text-red-800">Adam Trincas</h1>
       </main>
     </>
   )
