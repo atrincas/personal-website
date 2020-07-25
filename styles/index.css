@@ -23,6 +23,7 @@
 
 body {
   @apply font-ubuntu;
+  @apply bg-light-shade;
 }
 
 h1,

@@ -6,8 +6,9 @@ module.exports = {
         ubuntu: ['Ubuntu', 'Roboto', 'sans-serif']
       },
       colors: {
-        'light-red': '#FAFAFA',
-        'dark-blue': '#225CE8'
+        'light-shade': '#f7f9fc',
+        'light-blue': '#bfcbe8',
+        'dark-blue': '#4f71be'
       },
       minHeight: {
         '3': '3rem'

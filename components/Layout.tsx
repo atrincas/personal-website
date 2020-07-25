@@ -1,5 +1,5 @@
-import React from 'react'
 import Head from 'next/head'
+import MainHeader from './MainHeader'
 
 type Props = {
   children: React.ReactNode
@@ -12,6 +12,7 @@ export default function Layout({ children, title = 'Adam Trincas' }: Props) {
       <Head>
         <title>{title}</title>
       </Head>
+      <MainHeader />
       {children}
     </>
   )

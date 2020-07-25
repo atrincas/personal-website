@@ -1,13 +1,13 @@
 // TODO: Replace this data to database:
 const technologies = [
-  'HTML',
-  'CSS',
-  'Javascript',
-  'React',
-  'Redux',
-  'NextJS',
-  'Styled Components',
-  'Tailwindcss'
+  'html',
+  'css',
+  'javascript',
+  'react',
+  'redux',
+  'nextjs',
+  'styled components',
+  'tailwindcss'
 ]
 
 export default function Home() {
@@ -20,12 +20,25 @@ export default function Home() {
         </hgroup>
       </header>
       <article className="my-5">
-        <h3>Technologies I work with</h3>
+        <h3>Technologies I actively work with</h3>
         <ul className="flex flex-wrap">
           {technologies.map((tech) => (
             <li
               key={tech}
-              className="bg-transparent hover:bg-orange-500 text-orange-700 font-semibold hover:text-white text-center m-2 p-2 border border-orange-500 hover:border-transparent rounded"
+              className="
+              bg-transparent
+              hover:bg-light-blue
+              text-dark-blue
+              font-semibold
+              hover:text-white
+              text-sm
+              text-center m-2 p-2
+              border
+              border-lightbg-light-blue
+              hover:border-transparent
+              rounded
+              cursor-auto
+              "
             >
               {tech}
             </li>
