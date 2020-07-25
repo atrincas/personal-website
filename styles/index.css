@@ -2,5 +2,8 @@
 @import 'tailwindcss/base';
 /* purgecss end ignore */
 
+/* Custom Global Styles */
+@import 'global.scss';
+
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
