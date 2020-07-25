@@ -3,7 +3,46 @@
 /* purgecss end ignore */
 
 /* Custom Global Styles */
-@import 'global.scss';
+@font-face {
+  font-family: 'Anonymous Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Anonymous Pro Bold'), local('AnonymousPro-Bold'),
+    url('/fonts/anonymous-pro-v13-latin-700.woff2') format('woff2'),
+    url('/fonts/anonymous-pro-v13-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+    url('/fonts/ubuntu-v14-latin-regular.woff2') format('woff2'),
+    url('/fonts/ubuntu-v14-latin-regular.woff') format('woff');
+}
+
+body {
+  @apply font-ubuntu;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-heading;
+  @apply font-bold;
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
 
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
