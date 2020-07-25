@@ -8,7 +8,7 @@ export default function MainHeader() {
             <li className="mr-6">
               <a href="#">about</a>
             </li>
-            <li className="mr-6">
+            <li>
               <a href="#">blog</a>
             </li>
           </ul>

@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         'light-shade': '#f7f9fc',
         'light-blue': '#bfcbe8',
-        'dark-blue': '#4f71be'
+        'dark-blue': '#344f8d'
       },
       minHeight: {
         '3': '3rem'
