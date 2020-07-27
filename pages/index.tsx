@@ -1,3 +1,5 @@
+import LanguageStats from '../components/LanguageStats'
+
 import GithubIcon from '../icons/github.svg'
 import LinkedinIcon from '../icons/linkedin.svg'
 import GmailIcon from '../icons/gmail.svg'
@@ -7,10 +9,10 @@ const technologies = [
   'html',
   'css',
   'javascript',
-  'Typescript',
+  'typescript',
   'react',
   'redux',
-  'Ruby on Rails',
+  'ruby on rails',
   'styled components',
   'tailwindcss'
 ]
@@ -71,6 +73,10 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </article>
+      <article className="my-5">
+        <h3>My Github language usage</h3>
+        <LanguageStats />
       </article>
       <article className="my-5">
         <h3>Latest Projects</h3>
