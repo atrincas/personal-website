@@ -55,7 +55,7 @@ function Home({ data }: Props) {
         </ul>
       </div>
       <hr className="my-10" />
-      <article className="my-5">
+      <article className="my-10">
         <h3 className="mb-2">Technologies I work with</h3>
         <ul className="flex flex-wrap">
           {technologies.map((tech) => (
@@ -82,10 +82,10 @@ function Home({ data }: Props) {
           ))}
         </ul>
       </article>
-      <article className="my-5">
+      <article className="my-10">
         <h3 className="mb-2 relative">My Github language usage</h3>
         <LanguageStats data={data} />
-        <p className="mt-5 text-xs">
+        <p className="mt-5 text-xs italic">
           The calculation of the percentages is made possible by this{' '}
           <a
             className="text-dark-blue hover:underline"

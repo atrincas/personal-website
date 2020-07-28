@@ -6,10 +6,14 @@ export default function MainHeader() {
         <nav>
           <ul className="flex text-dark-blue">
             <li className="mr-6">
-              <a href="#">about</a>
+              <a href="#" className="hover:underline">
+                about
+              </a>
             </li>
             <li>
-              <a href="#">blog</a>
+              <a href="#" className="hover:underline">
+                blog
+              </a>
             </li>
           </ul>
         </nav>
