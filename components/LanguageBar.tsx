@@ -11,7 +11,10 @@ export default function LanguageBar({ languages }: Props) {
     <div className="mb-2">
       <span className="flex h-2 overflow-hidden bg-gray-300 rounded">
         {languages.map((lang) => (
-          <span style={{ width: `${lang.percentage}%`, backgroundColor: lang.color }}></span>
+          <span
+            key={lang.percentage}
+            style={{ width: `${lang.percentage}%`, backgroundColor: lang.color }}
+          ></span>
         ))}
       </span>
     </div>

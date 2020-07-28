@@ -8,11 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@octokit/request": "^5.4.7",
+    "github-language-usage": "^1.0.0",
     "next": "9.4.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "swr": "^0.2.3"
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",

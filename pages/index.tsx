@@ -1,8 +1,10 @@
+import { githubLanguageUsage } from 'github-language-usage'
 import LanguageStats from '../components/LanguageStats'
 
 import GithubIcon from '../icons/github.svg'
 import LinkedinIcon from '../icons/linkedin.svg'
 import GmailIcon from '../icons/gmail.svg'
+import { Props } from '../types'
 
 // TODO: Replace this data to database:
 const technologies = [
@@ -17,7 +19,7 @@ const technologies = [
   'tailwindcss'
 ]
 
-export default function Home() {
+function Home({ data }: Props) {
   return (
     <main role="main" className="container-md max-w-screen-md mx-auto px-5 py-10">
       <header className="flex flex-col-reverse items-center md:flex-row md:justify-between ">
@@ -76,7 +78,7 @@ export default function Home() {
       </article>
       <article className="my-5">
         <h3>My Github language usage</h3>
-        <LanguageStats />
+        <LanguageStats data={data} />
       </article>
       <article className="my-5">
         <h3>Latest Projects</h3>
@@ -84,3 +86,11 @@ export default function Home() {
     </main>
   )
 }
+
+export async function getServerSideProps() {
+  const data = await githubLanguageUsage(process.env.PAT_GITHUB || '', 'atrincas')
+
+  return { props: { data } }
+}
+
+export default Home
