@@ -2,6 +2,7 @@ import { githubLanguageUsage } from 'github-language-usage'
 import LanguageStats from '../components/LanguageStats'
 
 import GithubIcon from '../icons/github.svg'
+import NpmIcon from '../icons/npm.svg'
 import LinkedinIcon from '../icons/linkedin.svg'
 import GmailIcon from '../icons/gmail.svg'
 import { Props } from '../types'
@@ -32,25 +33,30 @@ function Home({ data }: Props) {
       <div className="flex justify-center md:justify-start my-10">
         <ul className="flex">
           <li className="mr-3">
-            <a href="https://github.com/atrincas" title="Github" target="_blank">
-              <GithubIcon />
-            </a>
-          </li>
-          <li className="mr-3">
             <a href="https://www.linkedin.com/in/adamtrincas/" title="LinkedIn" target="_blank">
               <LinkedinIcon />
             </a>
           </li>
-          <li>
+          <li className="mr-3">
             <a href="mailto:atrincas@gmail.com" title="Email" target="_blank">
               <GmailIcon />
+            </a>
+          </li>
+          <li className="mr-3">
+            <a href="https://github.com/atrincas" title="Github" target="_blank">
+              <GithubIcon />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.npmjs.com/~atrincas" title="npm profile" target="_blank">
+              <NpmIcon />
             </a>
           </li>
         </ul>
       </div>
       <hr className="my-10" />
       <article className="my-5">
-        <h3>Technologies I work with</h3>
+        <h3 className="mb-2">Technologies I work with</h3>
         <ul className="flex flex-wrap">
           {technologies.map((tech) => (
             <li
@@ -77,11 +83,19 @@ function Home({ data }: Props) {
         </ul>
       </article>
       <article className="my-5">
-        <h3>My Github language usage</h3>
+        <h3 className="mb-2 relative">My Github language usage</h3>
         <LanguageStats data={data} />
-      </article>
-      <article className="my-5">
-        <h3>Latest Projects</h3>
+        <p className="mt-5 text-xs">
+          The calculation of the percentages is made possible by this{' '}
+          <a
+            className="text-dark-blue hover:underline"
+            href="https://www.npmjs.com/package/github-language-usage"
+            target="_blank"
+          >
+            npm package
+          </a>
+          . (Which I built myself :D)
+        </p>
       </article>
     </main>
   )
