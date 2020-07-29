@@ -55,13 +55,14 @@ function Home({ data }: Props) {
         </ul>
       </div>
       <hr className="my-10" />
-      <article className="my-10">
-        <h3 className="mb-2">Technologies I work with</h3>
-        <ul className="flex flex-wrap">
-          {technologies.map((tech) => (
-            <li
-              key={tech}
-              className="
+      <div className="flex flex-col md:flex-row md:justify-between">
+        <article className="my-10 md:max-w-xs">
+          <h3 className="mb-2">Technologies I work with</h3>
+          <ul className="flex flex-wrap">
+            {technologies.map((tech) => (
+              <li
+                key={tech}
+                className="
               bg-transparent
               hover:bg-light-blue
               text-dark-blue
@@ -76,27 +77,28 @@ function Home({ data }: Props) {
               hover:border-transparent
               rounded
               "
+              >
+                {tech}
+              </li>
+            ))}
+          </ul>
+        </article>
+        <article className="my-10 md:max-w-xs">
+          <h3 className="mb-2 relative">My Github language usage</h3>
+          <LanguageStats data={data} />
+          <p className="mt-5 text-xs italic">
+            Contribution to this{' '}
+            <a
+              className="text-dark-blue underline hover:no-underline"
+              href="https://www.npmjs.com/package/github-language-usage"
+              target="_blank"
             >
-              {tech}
-            </li>
-          ))}
-        </ul>
-      </article>
-      <article className="my-10">
-        <h3 className="mb-2 relative">My Github language usage</h3>
-        <LanguageStats data={data} />
-        <p className="mt-5 text-xs italic">
-          The calculation of the percentages is made possible by this{' '}
-          <a
-            className="text-dark-blue hover:underline"
-            href="https://www.npmjs.com/package/github-language-usage"
-            target="_blank"
-          >
-            npm package
-          </a>
-          . (Which I built myself :D)
-        </p>
-      </article>
+              npm package
+            </a>
+            . (Which I built myself :D)
+          </p>
+        </article>
+      </div>
     </main>
   )
 }
