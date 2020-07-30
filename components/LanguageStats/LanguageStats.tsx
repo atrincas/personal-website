@@ -1,6 +1,6 @@
-import CircleIcon from '../icons/circle.svg'
+import CircleIcon from '../../icons/circle.svg'
 import LanguageBar from './LanguageBar'
-import { Props } from '../types'
+import { Props } from '../../types'
 
 export default function LanguageStats({ data }: Props) {
   return (
