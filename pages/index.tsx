@@ -1,10 +1,8 @@
 import { githubLanguageUsage } from 'github-language-usage'
+
+import Social from '../components/Social/Social'
 import LanguageStats from '../components/LanguageStats'
 
-import GithubIcon from '../icons/github.svg'
-import NpmIcon from '../icons/npm.svg'
-import LinkedinIcon from '../icons/linkedin.svg'
-import GmailIcon from '../icons/gmail.svg'
 import { Props } from '../types'
 
 // TODO: Replace this data to database:
@@ -30,30 +28,7 @@ function Home({ data }: Props) {
         </hgroup>
         <img src="/images/adam-trincas.jpeg" alt="Adam Trincas" className="w-32 h-32 rounded" />
       </header>
-      <div className="flex justify-center md:justify-start my-10">
-        <ul className="flex">
-          <li className="mr-3">
-            <a href="https://www.linkedin.com/in/adamtrincas/" title="LinkedIn" target="_blank">
-              <LinkedinIcon />
-            </a>
-          </li>
-          <li className="mr-3">
-            <a href="mailto:atrincas@gmail.com" title="Email" target="_blank">
-              <GmailIcon />
-            </a>
-          </li>
-          <li className="mr-3">
-            <a href="https://github.com/atrincas" title="Github" target="_blank">
-              <GithubIcon />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.npmjs.com/~atrincas" title="npm profile" target="_blank">
-              <NpmIcon />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <Social />
       <hr className="my-10" />
       <div className="flex flex-col md:flex-row md:justify-between">
         <article className="my-10 md:max-w-xs">
