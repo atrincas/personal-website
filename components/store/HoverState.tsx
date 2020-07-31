@@ -51,7 +51,7 @@ function useHoverState(): UseHoverState {
   return [state, { setHoveredElement, resetHoveredElement }]
 }
 
-export const HoverStateContext = createContext(undefined)
+export const HoverStateContext = createContext({} as UseHoverState)
 
 export function HoverStateProvider({ children }: PropsChildren) {
   return <HoverStateContext.Provider value={useHoverState()}>{children}</HoverStateContext.Provider>
