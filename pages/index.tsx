@@ -5,7 +5,6 @@ import Technologies from '../components/Technologies'
 import LanguageStats from '../components/LanguageStats'
 
 import { Props } from '../types'
-import Emoji from '../components/Emoji'
 
 function Home({ data }: Props) {
   return (
@@ -33,7 +32,7 @@ function Home({ data }: Props) {
             >
               npm package
             </a>
-            . (Which I built myself <Emoji symbol="😄" label="smiley" />)
+            .
           </p>
         </article>
       </div>

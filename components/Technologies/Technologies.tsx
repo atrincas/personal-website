@@ -5,7 +5,6 @@ const technologies = [
   'javascript',
   'typescript',
   'react',
-  'redux',
   'ruby on rails',
   'styled components',
   'tailwindcss'
