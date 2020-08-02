@@ -3200,10 +3200,10 @@ get-value@^2.0.3, get-value@^2.0.6:
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
 
-github-language-usage@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/github-language-usage/-/github-language-usage-1.0.0.tgz#b5b25c797295b63d4952095fe8f18e315e0ea559"
-  integrity sha512-4/CKT5ND1iGHWrl3O8l7EfmBkP6H2nNghN5CmkoSJCXRS2lE7Rn+gC8Zy9W0vttOHPpE/EfrcLDYxw81y22K0g==
+github-language-usage@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/github-language-usage/-/github-language-usage-1.1.0.tgz#dbd72365406c526ae84ac9b3689e2ff4e463e724"
+  integrity sha512-SxKJZd7wm7ZXUQJLp6eNLbnPn7WzCBP3WzhYswXnpFzy1SOvhPR/K5Cbrz42d/ICKREiaPnM3gjZgmJxK4+t+Q==
   dependencies:
     node-fetch "^2.6.0"
 

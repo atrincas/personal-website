@@ -40,7 +40,7 @@ function Home({ data }: Props) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const data = await githubLanguageUsage(process.env.PAT_GITHUB || '', 'atrincas')
 
   return { props: { data } }
