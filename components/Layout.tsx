@@ -12,6 +12,10 @@ export default function Layout({ children, title = 'Adam Trincas' }: Props) {
     <>
       <Head>
         <title>{title}</title>
+        <meta
+          name="description"
+          content="I'm Adam, a front end developer from the Netherlands. Look around and learn more about me."
+        ></meta>
       </Head>
       <MainHeader />
       {children}
