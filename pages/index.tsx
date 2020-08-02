@@ -29,6 +29,7 @@ function Home({ data }: Props) {
               className="text-dark-blue underline hover:no-underline"
               href="https://www.npmjs.com/package/github-language-usage"
               target="_blank"
+              rel="noopener"
             >
               npm package
             </a>

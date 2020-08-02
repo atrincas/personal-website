@@ -30,6 +30,7 @@ export default function SocialLink({ href, title, icon }: Props) {
       onMouseEnter={handleOnMouseEnter}
       onMouseLeave={handleOnMouseLeave}
       target="_blank"
+      rel="noopener"
     >
       <Icon className={custcomClasses()} />
     </a>

@@ -12,7 +12,7 @@ export default function MainHeader() {
         <nav>
           <ul className="flex text-dark-blue">
             <li className="mr-6">
-              <a href="https://adamtrincas.netlify.app/cv" target="_blank">
+              <a href="https://adamtrincas.netlify.app/cv" target="_blank" rel="noopener">
                 resume
               </a>
             </li>
