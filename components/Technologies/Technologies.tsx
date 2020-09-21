@@ -5,9 +5,14 @@ const technologies = [
   'javascript',
   'typescript',
   'react',
+  'nextjs',
   'ruby on rails',
+  'express',
+  'graphql',
   'styled components',
-  'tailwindcss'
+  'tailwindcss',
+  'jest',
+  'cypress'
 ]
 
 export default function Technologies() {
