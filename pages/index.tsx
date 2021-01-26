@@ -8,7 +8,7 @@ import { Props } from '../types'
 
 function Home({ data }: Props) {
   return (
-    <main role="main" className="container-md max-w-screen-md mx-auto px-5 py-10">
+    <>
       <header className="flex flex-col-reverse items-center md:flex-row md:justify-between ">
         <hgroup>
           <h1>Hi, I'm Adam</h1>
@@ -16,13 +16,18 @@ function Home({ data }: Props) {
         </hgroup>
         <img src="/images/adam-trincas.jpeg" alt="Adam Trincas" className="w-32 h-32 rounded" />
       </header>
+      <hr className="hidden md:block md:w-1/12" />
+      <p className="w-full text-sm md:w-6/12 md:text-base mt-5">
+        I am a self taught web developer, passionate about exploring and learning new things related
+        to web technologies.
+      </p>
       <Social />
       <hr className="my-10" />
       <div className="flex flex-col md:flex-row md:justify-between">
         <Technologies />
         <article className="my-10 md:max-w-xs">
           <h3 className="mb-2 relative">My Github language usage</h3>
-          <LanguageStats data={data} />
+          {/* <LanguageStats data={data} /> */}
           <p className="mt-5 text-xs italic">
             Contribution to this{' '}
             <a
@@ -37,12 +42,12 @@ function Home({ data }: Props) {
           </p>
         </article>
       </div>
-    </main>
+    </>
   )
 }
 
 export async function getStaticProps() {
-  const data = await githubLanguageUsage(process.env.PAT_GITHUB || '', 'atrincas')
+  const data = 'dummy data' // await githubLanguageUsage(process.env.PAT_GITHUB || '', 'atrincas')
 
   return { props: { data } }
 }

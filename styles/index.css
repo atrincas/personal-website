@@ -5,24 +5,25 @@
 /* Custom Global Styles */
 @font-face {
   font-family: 'Anonymous Pro';
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   src: local('Anonymous Pro Bold'), local('AnonymousPro-Bold'),
     url('/fonts/anonymous-pro-v13-latin-700.woff2') format('woff2'),
     url('/fonts/anonymous-pro-v13-latin-700.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Overpass';
   font-style: normal;
   font-weight: 400;
-  src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
-    url('/fonts/ubuntu-v14-latin-regular.woff2') format('woff2'),
-    url('/fonts/ubuntu-v14-latin-regular.woff') format('woff');
+  src: local('Overpass Regular'), local('Overpass-Regular'),
+    url('/fonts/Overpass-Regular.ttf') format('ttf');
+  font-display: swap;
 }
 
 body {
-  @apply font-ubuntu;
+  @apply font-overpass;
   @apply bg-light-shade;
 }
 

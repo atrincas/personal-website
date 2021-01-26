@@ -6,19 +6,15 @@ const technologies = [
   'typescript',
   'react',
   'nextjs',
-  'ruby on rails',
   'express',
   'graphql',
-  'styled components',
-  'tailwindcss',
-  'jest',
-  'cypress'
+  'styled components'
 ]
 
 export default function Technologies() {
   return (
-    <article className="my-10 md:max-w-xs">
-      <h3 className="mb-2">Technologies I work with</h3>
+    <article className="my-10 md:max-w-s">
+      <h3 className="mb-2">Technologies I currently work with</h3>
       <ul className="flex flex-wrap">
         {technologies.map((tech) => (
           <li

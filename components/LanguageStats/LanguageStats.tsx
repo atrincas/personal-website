@@ -12,7 +12,7 @@ export default function LanguageStats({ data }: Props) {
             <div className="inline-flex flex-items-center flex-nowrap link-gray text-small mr-3">
               <CircleIcon fill={lang.color} />
               <span className="font-bold mr-1">{lang.name}</span>
-              <span className="text-gray-600">{lang.percentage}%</span>
+              <span className="text-gray-900">{lang.percentage}%</span>
             </div>
           </li>
         ))}

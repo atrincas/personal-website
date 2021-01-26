@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import MainHeader from './MainHeader'
 import Footer from './Footer'
 
 type Props = {
@@ -18,9 +17,12 @@ export default function Layout({ children, title = 'Adam Trincas' }: Props) {
         ></meta>
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
-      <MainHeader />
-      {children}
-      <Footer />
+      <div className="max-w-screen-lg mx-auto min-h-screen relative py-16">
+        <main role="main" className="max-w-screen-lg px-5 py-10">
+          {children}
+        </main>
+        <Footer />
+      </div>
     </>
   )
 }

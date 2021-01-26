@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['Anonymous Pro', 'Ubuntu', 'Roboto', 'sans-serif'],
-        ubuntu: ['Ubuntu', 'Roboto', 'sans-serif']
+        heading: ['Anonymous Pro', 'Overpass', 'Roboto', 'sans-serif'],
+        overpass: ['Overpass', 'Roboto', 'sans-serif']
       },
       colors: {
         'light-shade': '#f7f9fc',
