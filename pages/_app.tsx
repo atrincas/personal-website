@@ -2,8 +2,7 @@ import { useEffect } from 'react'
 import { AppProps } from 'next/app'
 import Router, { useRouter } from 'next/router'
 // Temporary fix to avoid type error. TODO: Create types module
-// const PageTransition = require('next-page-transitions')
-import { PageTransition } from 'next-page-transitions'
+const PageTransition = require('next-page-transitions')
 
 import * as gtag from '../lib/gtag'
 import Layout from '../components/Layout'
