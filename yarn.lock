@@ -3220,12 +3220,12 @@ get-value@^2.0.3, get-value@^2.0.6:
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
 
-github-language-usage@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/github-language-usage/-/github-language-usage-1.1.0.tgz#dbd72365406c526ae84ac9b3689e2ff4e463e724"
-  integrity sha512-SxKJZd7wm7ZXUQJLp6eNLbnPn7WzCBP3WzhYswXnpFzy1SOvhPR/K5Cbrz42d/ICKREiaPnM3gjZgmJxK4+t+Q==
+github-language-usage@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/github-language-usage/-/github-language-usage-1.1.1.tgz#b0060ed964e62fcd1d0283181733551a326dfe1d"
+  integrity sha512-5OGYgYjZkvd1A9H2r5GC+P5MLAEtmI9/+bqS8P/NS9lW/nj4IF+3dfxb53eykcOmOYJ1L9qOavM2oh0zsOfUZA==
   dependencies:
-    node-fetch "^2.6.0"
+    node-fetch ">=2.6.1"
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -4276,10 +4276,15 @@ node-emoji@^1.8.1:
   dependencies:
     lodash.toarray "^4.4.0"
 
-node-fetch@2.6.0, node-fetch@^2.6.0:
+node-fetch@2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+
+node-fetch@>=2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-libs-browser@^2.2.1:
   version "2.2.1"
