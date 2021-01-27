@@ -27,7 +27,7 @@ function Home({ data }: Props) {
         <Technologies />
         <article className="my-10 md:max-w-xs">
           <h3 className="mb-2 relative">My Github language usage</h3>
-          {/* <LanguageStats data={data} /> */}
+          <LanguageStats data={data} />
           <p className="mt-5 text-xs italic">
             Contribution to this{' '}
             <a
@@ -47,7 +47,7 @@ function Home({ data }: Props) {
 }
 
 export async function getStaticProps() {
-  const data = 'dummy data' // await githubLanguageUsage(process.env.PAT_GITHUB || '', 'atrincas')
+  const data = await githubLanguageUsage(process.env.PAT_GITHUB || '', 'atrincas')
 
   return { props: { data } }
 }

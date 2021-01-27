@@ -10,7 +10,6 @@
   "dependencies": {
     "github-language-usage": "^1.1.0",
     "next": "9.4.4",
-    "next-page-transitions": "^1.0.0-beta.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
