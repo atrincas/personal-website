@@ -6,6 +6,7 @@ const technologies = [
   'typescript',
   'react',
   'nextjs',
+  'nodejs',
   'express',
   'graphql',
   'styled components'
