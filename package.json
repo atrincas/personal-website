@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "github-language-usage": "^1.1.1",
-    "next": "^10.0.5",
+    "next": "^11.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
