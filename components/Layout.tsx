@@ -13,7 +13,7 @@ export default function Layout({ children, title = 'Adam Trincas' }: Props) {
         <title>{title}</title>
         <meta
           name="description"
-          content="I'm Adam, a front end developer from the Netherlands. Look around my personal website to learn more about me."
+          content="I'm Adam, a full stack developer from the Netherlands."
         ></meta>
         <link rel="icon" href="/images/favicon.ico" />
       </Head>

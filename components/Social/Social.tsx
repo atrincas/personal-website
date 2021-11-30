@@ -5,7 +5,7 @@ import { SOCIALS } from './constants'
 export default function Social() {
   return (
     <HoverStateProvider>
-      <div className="flex justify-center md:justify-start my-10">
+      <div className="mt-5">
         <ul className="flex">
           {SOCIALS.map((social, i) => (
             <li key={`${social.title}-${i}`} className="mr-3">
