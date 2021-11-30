@@ -1,5 +1,4 @@
 import { githubLanguageUsage } from 'github-language-usage'
-
 import Social from '../components/Social/Social'
 import LanguageStats from '../components/LanguageStats'
 

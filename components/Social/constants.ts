@@ -1,6 +1,4 @@
-import GithubIcon from '../../icons/github.svg'
-import LinkedinIcon from '../../icons/linkedin.svg'
-import GmailIcon from '../../icons/gmail.svg'
+import { GithubIcon, GmailIcon, LinkedinIcon } from '../../icons'
 
 interface SocialElements {
   url: string
