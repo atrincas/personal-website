@@ -11,14 +11,11 @@ export default function Layout({ children, title = 'Adam Trincas' }: Props) {
     <>
       <Head>
         <title>{title}</title>
-        <meta
-          name="description"
-          content="I'm Adam, a full stack developer from the Netherlands."
-        ></meta>
+        <meta name="description" content="I'm Adam, a full stack developer."></meta>
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <div className="max-w-screen-lg mx-auto min-h-screen relative py-16">
-        <main role="main" className="max-w-screen-lg px-5 py-10">
+        <main role="main" className="max-w-screen-lg px-5 py-10 flex flex-col items-center">
           {children}
         </main>
         <Footer />
